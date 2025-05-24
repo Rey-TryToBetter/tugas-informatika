@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  color: white;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: url("Screenshot 2025-05-11 220437.png");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.features {
+  background-color: #fff;
+  padding: 60px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.feature {
+  max-width: 400px;
+  text-align: center;
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.features h2 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+.features p {
+  margin: 10px 0;
+  color: #333;
+}
+
+.features button {
+  padding: 10px 20px;
+  background-color: #100000;
+  border: none;
+  cursor: pointer;
+}
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+    .kelas-container,
+    .prestasi-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+  .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 15px;
+    }
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .card-subtitle {
+      font-size: 14px;
+      color: gray;
+      margin: 5px 0;
+    }
+    .price {
+     color: #007bff;
+      font-weight: bold;
+    }
