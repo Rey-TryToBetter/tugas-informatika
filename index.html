@@ -4,43 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
   <title>EDUTECH</title>
-</head>
+ </head>
 <body>
-
-  <header class="main-header">
-    <div class="logo">EDUTECH</div>
-    <nav>
-      <a href="#">Tentang</a>
-      <a href="#">Pendaftaran</a>
-      <a href="#">Testimoni</a>
-      <a href="#">Kontak</a>
+  <header class="header-section">
+    <nav class="navbar">
+      <div class="logo">EDUTECH</div>
+      <ul class="nav-links">
+        <li><a href="#pendaftaran">Pendaftaran</a></li>
+        <li><a href="#Testimoni">Testimoni</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#kontak" class="cta">Kontak</a></li>
+      </ul>
     </nav>
+
+    <div class="hero-content">
+      <h1>EDUTECH</h1>
+      <p>Cara mudah belajar dimana saja dan kapan saja</p>
+      <a href="#" class="cta-button">Mulai Sekarang</a>
+    </div>
   </header>
-
-  <section class="hero-section">
-    <div class="hero-text">
-      <h1>TENTANG EDUTECH</h1>
-      <p>Platform Belajar Online Interaktif untuk Siswa SMP, SMA, hingga Mahasiswa</p>
-      <button>Daftar Sekarang</button>
-    </div>
-    <div class="hero-image">
-      <img src="Screenshot 2025-05-11 220437.png" alt="Gambar kelas">
-      <div class="overlay-text">
-        <h2>EDUTECH</h2>
-        <p>Mulai Gabung Sekarang</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="mapel-section">
+ <section class="mapel-section">
       <h2>Mapel yang dapat diambil</h2>
     <div class="mapel-container">
 <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <div class="img-container">
-        <img src="Screenshot 2025-05-11 220437.png" alt="Materi">
+        <img src="assets/images/Front.jpg" alt="Materi">
       </div>
       <h3>Materi Front End</h3>
       <p>Cocok untuk siswa SMK dan mahasiswa jurusan teknologi.</p>
@@ -56,7 +48,7 @@
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <div class="img-container">
-        <img src="Screenshot 2025-05-11 220437.png" alt="Materi">
+        <img src="assets/images/math.jpg" alt="Materi">
       </div>
       <h3>Materi Matematika</h3>
       <p>Dari Dasar Hingga Lanjutan belajar jadi mudah.</p>
@@ -72,7 +64,7 @@
   <div class="flip-card-inner">
     <div class="flip-card-front">
       <div class="img-container">
-        <img src="Screenshot 2025-05-11 220437.png" alt="Materi">
+        <img src="assets/images/english2.jpg" alt="Materi">
       </div>
       <h3>Materi Bahasa Inggris</h3>
       <p>Kuasai Grammar,speaking,dan listening dengan mudah.</p>
@@ -83,118 +75,242 @@
     </div>
   </div>
 </div>
+</div>
+</section>
 
-  <section class="tentang-kami">
-    <div class="tentang-text">
-      <h2>Tentang Kami</h2>
-      <p>EDUTECH adalah platform edukasi digital berbasis teknologi yang membantu siswa mencapai potensi akademik maksimal mereka.</p>
-      <p><strong>Apa yang kami Tawarkan?</strong> Kelas interaktif, mentor profesional, dan fleksibilitas belajar sesuai jadwal.</p>
-      <button>Mulai Sekarang</button>
+  <section class="content-section">
+    <div class="two-column">
+      <div class="content-text">
+        <h3>Lakukan dimana saja</h3>
+        <p>Belajar dari gadget yang dapat diakses melalui HP, notebook,dan perangkat lainnya kapan dimana saja.</p>
+        <button class="btn">Button</button>
+        <button class="btn btn-secondary">Secondary button</button>
+      </div>
+      <div class="content-image">
+        <img src="assets/images/r (1).jpg" alt="Student learning">
+      </div>
     </div>
-    <div class="tentang-image">
-      <img src="Screenshot 2025-05-11 220437.png" alt="Tutor EDUTECH">
-    </div>
-  </section>
 
-  <section class="testimoni">
-    <h2>Apa kata Mereka?</h2>
-    <div class="testimoni-container">
-      <div class="testi-card">
-        <img src="Screenshot 2025-05-11 220437.png" alt="Testimoni 1">
-        <p>“Saya suka cara penyampaian materi yang mudah dimengerti!”</p>
-        <strong>Sari, Mahasiswa</strong>
+    <div class="two-column">
+      <div class="content-image">
+        <img src="assets/images/r (2).jpg" alt="Learning anytime">
       </div>
-      <div class="testi-card">
-        <img src="Screenshot 2025-05-11 220437.png" alt="Testimoni 2">
-        <p>“Belajar kapan pun jadi lebih fleksibel, cocok banget buat saya.”</p>
-        <strong>Yusuf, Siswa SMA</strong>
-      </div>
-      <div class="testi-card">
-        <img src="Screenshot 2025-05-11 220437.png" alt="Testimoni 3">
-        <p>“Platform-nya simple dan materinya lengkap.”</p>
-        <strong>Lina, Siswa SMK</strong>
+      <div class="content-text">
+        <h3>Lanjut kapan saja</h3>
+        <p>Dengan sistem video yang dapat di pause kapan saja dan dimana saja sehingga membuat belajar jadi lebih nyaman.</p>
+        <button class="btn">Button</button>
+        <button class="btn btn-secondary">Secondary button</button>
       </div>
     </div>
   </section>
 
-  <section class="formula">
-    <h2>Formula 3B Bantu Kamu Mencapai Target Akademikmu!</h2>
-    <div class="formula-container">
-      <div class="formula-card">
-        <img src="Screenshot 2025-05-11 220437.png" alt="Belajar">
-        <span class="label">Belajar</span>
+  <section class="content-section">
+    <h2 class="section-title">Kami punya 3 tingkatan kelas</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <div class="course-image">
+          <img src="assets/images/smp.jpg" alt="Kelas pemula">
+        </div>
+        <div class="course-content">
+          <h4>Paket ESEMPEH</h4>
+          <p>Cocok untuk kamu yang masih ESEMPEH</p>
+          <div class="price">$19.99</div>
+        </div>
       </div>
-      <div class="formula-card">
-        <img src="Screenshot 2025-05-11 220437.png" alt="Berlatih">
-        <span class="label">Berlatih</span>
+
+      <div class="course-card">
+        <div class="course-image">
+          <img src="assets/images/sma.jpg" alt="Kelas menengah">
+        </div>
+        <div class="course-content">
+          <h4>Paket SMA</h4>
+          <p>khusus untuk siswa SMA</p>
+          <div class="price">$39.99</div>
+        </div>
       </div>
-      <div class="formula-card">
-        <img src="Screenshot 2025-05-11 220437.png"alt="Bertanding">
-        <span class="label">Bertanding</span>
+
+      <div class="course-card">
+        <div class="course-image">
+          <img src="assets/images/kuliah.jpg" alt="Kelas lanjutan">
+        </div>
+        <div class="course-content">
+          <h4>Paket UNIVERSITAS</h4>
+          <p>Khusus untuk kamu tingkat Mahasiswa</p>
+          <div class="price">$59.99</div>
+        </div>
       </div>
     </div>
   </section>
 
   
-<section class="hero">
-  <img src="Screenshot 2025-05-11 220437.png" alt="Tutor Image">
-  <div style="max-width: 500px;">
-    <p>Di EduTech, kami percaya bahwa kualitas pengajar adalah kunci keberhasilan siswa.<br><br>
-    Karena itu, kami hanya menghadirkan tutor-tutor profesional yang berpengalaman dan kompeten di bidangnya. Setiap pengajar kami telah melalui proses seleksi ketat, pelatihan intensif, dan memiliki pemahaman mendalam terhadap kurikulum nasional, mulai dari jenjang SD, SMP, hingga SMA.</p>
-  </div>
-</section>
-
-<section class="fitur">
-  <h3>Kelebihan EduTech untuk mencapai target akademikmu!</h3>
-  <div class="grid">
-    <div class="grid-item">
-      <img src="Screenshot 2025-05-11 220437.png" alt="Pengajar">
-      <p>Pengajar-pengajar yang berkualitas dan juga akrab</p>
+  <section class="content-section">
+    <h2 class="section-title">Pencapaian Pelajar EduTech</h2>
+    
+    <div class="two-column" style="margin-bottom: 40px;">
+      <div class="content-image">
+        <img src="assets/images/char4.jpg" alt="Frontend coding">
+      </div>
+      <div class="content-text">
+        <h3>Frontend coding</h3>
+        <p>Pernah jadi IT Developer pada tahun ke 3</p>
+        <p>Peraih nilai tertinggi  dan berhasil meraih juara dengan
+website inovatif yaitu schedule tracker yang dapat digunakan sebagai growth media..</p>
+      </div>
     </div>
-    <div class="grid-item">
-      <img src="Screenshot 2025-05-11 220437.png" alt="Soal Ujian">
-      <p>Ratusan ribu soal untuk persiapan ujianmu</p>
+
+    <div class="two-column">
+      <div class="content-text">
+        <h3>Pidato Bahasa Inggris</h3>
+        <p>Mengajak kamu | Pidato Bahasa Inggris</p>
+      </div>
+      <div class="content-image">
+        <img src="assets/images/char3.jpg" alt="English speech">
+      </div>
     </div>
-    <div class="grid-item">
-      <img src="Screenshot 2025-05-11 220437.png" alt="Komunitas">
-      <p>Memiliki komunitas yang membantu melihat perkembanganmu se-Indonesia</p>
+  </section>
+
+  
+  <section class="content-section" id="Testimoni">
+    <h2 class="section-title">Apa kata Mereka?</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <div class="testimonial-avatar">
+          <img src="assets/images/char4.jpg" alt="Student">
+        </div>
+        <p>"Dari saya sudah banyak belajar matematika, tapi opsi dari EduTech merupakan yang paling berkesan" — Ara Mahasiswa Teknik Informatika ITS</p>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-avatar">
+          <img src="assets/images/char5.png" alt="Student">
+        </div>
+        <p>"Fitur kelas online nya mudah digunakan, dan jadwal bejalamar tidak bentrok dengan aktivitas" — Mini, Siswi SMA kelas 11</p>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-avatar">
+          <img src="assets/images/char3.jpg" alt="Student">
+        </div>
+        <p>"Setelah sering nilai privat senior di sekolah, belajar bersama merasa mudah banget. Highly recommended sama yang lain" — Ryo Siswa SMA kelas 12</p>
+      </div>
     </div>
-    <div class="grid-item">
-      <img src="Screenshot 2025-05-11 220437.png" alt="Metode Belajar">
-      <p>Metode belajar yang membantu mencapai target</p>
+  </section>
+
+  
+  <section class="content-section" id="tentang">
+    <h2 class="section-title">Fun fact</h2>
+    <div class="two-column">
+      <div class="content-text">
+        <h3>🎯 Fun Fact #1</h3>
+        <p>Terdapat fungsi yang memudahkan perangkat & Paledysics — dengan dengan seluler 3 joni yang dibutuhkan. Semakin sering belajar, semakin banyak "rek pengalaman" yang kamu itu.</p>
+      </div>
+      <div class="content-image">
+        <img src="assets/images/char3.jpg" alt="Fun fact illustration">
+      </div>
     </div>
-    <div class="grid-item">
-      <img src="Screenshot 2025-05-11 220437.png" alt="The King">
-      <p>Konsep The-King memudahkan siswa dalam menjawab soal secara cepat tepat dan akurat</p>
+
+    <div class="two-column">
+      <div class="content-image">
+        <img src="assets/images/Stelle.jpg" alt="Student studying">
+      </div>
+      <div class="content-text">
+        <h3>📚 Fun Fact #2</h3>
+        <p>Belajar sebekan tidak harus membosankan mempelajokat. Dengan menerapkan konsep "offline" dan bahkan otakn memproses informasi saat kamu tidur!</p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="contact">
-  <h4>Hubungi Kami</h4>
-  <p>(022)42187767<br>
-  officialEduTechpusat@gmail.com<br>
-  +62 858-5953-0402<br>
-  EduTech</p>
-</section>
-<section class="form-kontak">
-  <h2>Hubungi Kami</h2>
-  <form action="send_message.php" method="POST">
-    <label for="nama">Nama:</label>
-    <input type="text" id="nama" name="nama" required>
+ 
+  <section class="formula-section">
+    <h2 class="section-title">Formula 3B Bantu Kamu Mencapai Target Akademikmu!</h2>
+    <div class="formula-grid">
+      <div class="formula-item">
+        <div class="formula-icon">📚</div>
+        <div class="formula-label">Belajar</div>
+      </div>
+      <div class="formula-item">
+        <div class="formula-icon">💪</div>
+        <div class="formula-label">Berlatih</div>
+      </div>
+      <div class="formula-item">
+        <div class="formula-icon">🏆</div>
+        <div class="formula-label">Bertanding</div>
+      </div>
+    </div>
+  </section>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
+  
+  <section class="content-section" id="kontak">
+    <h2 class="section-title">Hubungi Kami</h2>
+    <div class="contact-form">
+      <form action="send_message.php" method="POST">
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required>
+        </div>
 
-    <label for="pesan">Pesan:</label>
-    <textarea id="pesan" name="pesan" rows="5" required></textarea>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
 
-    <button type="submit">Kirim</button>
-  </form>
-</section>
+        <div class="form-group">
+          <label for="pesan">Pesan:</label>
+          <textarea id="pesan" name="pesan" required></textarea>
+        </div>
 
-<footer>
-  <p>© Copyright 2024, EduTech. All Rights Reserved</p>
-</footer>
+        <button type="submit" class="btn" style="width: 100%;">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>EDUTECH</h3>
+        <p>Platform pembelajaran online terdepan yang membantu siswa mencapai prestasi akademik terbaik dengan metode pembelajaran yang inovatif dan efektif.</p>
+        <div class="social-links">
+          <a href="#" title="Facebook">📘</a>
+          <a href="#" title="Instagram">📷</a>
+          <a href="#" title="Twitter">🐦</a>
+          <a href="#" title="YouTube">📺</a>
+        </div>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Kursus</h3>
+        <ul>
+          <li><a href="#">Matematika</a></li>
+          <li><a href="#">Bahasa Inggris</a></li>
+          <li><a href="#">Frontend Development</a></li>
+          <li><a href="#">Semua Kursus</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Perusahaan</h3>
+        <ul>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Karir</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-section">
+        <h3>Bantuan</h3>
+        <ul>
+          <li><a href="#">Pusat Bantuan</a></li>
+          <li><a href="#">Kontak</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© Copyright 2024, EduTech. All Rights Reserved | Dibuat dengan ❤️ untuk pendidikan Indonesia</p>
+    </div>
+  </footer>
 </body>
 </html>
