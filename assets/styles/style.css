@@ -1,331 +1,558 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: sans-serif;
-  background: #fff;
-  color: #333;
-}
-header.main-header {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 50px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-header .logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-header nav a {
-  margin-left: 20px;
-  text-decoration: none;
-  color: #333;
-}
-
-.hero-section .hero-text {
-  text-align: center;
-  padding: 60px 20px;
-}
-.hero-text h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-.hero-text button {
-  padding: 10px 20px;
-  background: black;
-  color: white;
-  border: none;
-  margin-top: 20px;
-  cursor: pointer;
-}
-.hero-image {
-  position: relative;
-  margin-top: 30px;
-}
-.hero-image img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-}
-.overlay-text {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background: rgba(0,0,0,0.5);
-  color: white;
-  text-align: center;
-  padding: 10px 535px;
-}
-
-
-.mapel-section {
-  padding: 40px 20px;
-  text-align: center;
-}
-.mapel-container {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-.mapel-card {
-  background: #f4f4f4;
-  padding: 20px;
-  width: 250px;
-  border-radius: 8px;
-}
-.mapel-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-.flip-card-front {
-  background-color: #f5f5f5;
-}
-
-.flip-card-back {
-  background-color: #8a8a8a;
-  color: rgb(0, 0, 0);
-  transform: rotateY(180deg);
-}
-.img-container {
-  width: 100%;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 10px;
-}
-
-.img-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; 
-  display: block;
-  border-radius: 8px;
-}
-
-
-.tentang-kami {
-  display: flex;
-  padding: 40px 20px;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.tentang-text {
-  flex: 1;
-}
-.tentang-image {
-  flex: 1;
-}
-.tentang-image img {
-  max-width: 100%;
-}
-.tentang-text button {
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: black;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.testimoni {
-  background: #f9f9f9;
-  padding: 40px 20px;
-  text-align: center;
-}
-.testimoni-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-.testi-card {
-  width: 250px;
-  background: white;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-.testi-card img {
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  margin-bottom: 10px;
-}
-
-.formula {
-  padding: 40px 20px;
-  text-align: center;
-}
-.formula-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 20px;
-  flex-wrap: wrap;
-}
-.formula-card {
-  position: relative;
-  width: 150px;
-}
-.formula-card img {
-  width: 100%;
-}
-.formula-card .label {
-  position: absolute;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  background: yellow;
-  padding: 5px;
-  font-weight: bold;
-}
-
-footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-  
-    header, footer {
-      padding: 20px;
-      background-color: #fff;
-      text-align: center;
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     }
-    nav {
-      display: flex;
-      justify-content: flex-end;
-      gap: 20px;
-      padding: 20px;
+
+    body {
+      background: #fff;
+      color: #111;
+      line-height: 1.6;
     }
-    nav a {
-      text-decoration: none;
-      color: black;
-    }
-    .kontak-button {
-      background-color: black;
+
+   
+    .header-section {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('assets/images/assets.jpg') no-repeat center center/cover;
+      height: 100vh;
       color: white;
-      padding: 5px 15px;
-      border-radius: 5px;
-    }
-    .hero {
       display: flex;
-      padding: 40px;
+      flex-direction: column;
+      position: relative;
+    }
+
+  
+    .navbar {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
       align-items: center;
+      padding: 20px 40px;
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 30px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .nav-links a:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    .nav-links a.cta {
+      background: #000;
+      color: white;
+    }
+
+    /* Hero Content */
+    .hero-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
       justify-content: center;
-      gap: 40px;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
     }
-    .hero img {
-      max-width: 200px;
-      height: auto;
+
+    .hero-content h1 {
+      font-size: 4rem;
+      font-weight: 800;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
-    .fitur {
-      padding: 40px;
+
+    .hero-content p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      max-width: 600px;
+    }
+
+    .cta-button {
+      background: #000;
+      color: white;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .content-section {
+      padding: 80px 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 50px;
+      color: #111;
+    }
+
+   
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    .content-text h3 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: #111;
+    }
+
+    .content-text p {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .content-image {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .content-image img {
+      width: 100%;
+      height: 400px;
+      object-fit: auto;
+    }
+
+    .btn {
+      background: #000;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 20px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #333;
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 2px solid #000;
+      color: #000;
+      margin-left: 15px;
+    }
+
+    .btn-secondary:hover {
+      background: #000;
+      color: white;
+    }
+
+
+    .course-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .course-card {
+      background: #f8f9fa;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .course-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    }
+
+    .course-image {
+      width: 100%;
+      height: 200px;
+      background: #333;
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    .course-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .course-content {
+      padding: 25px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex-grow: 1;
       text-align: center;
     }
-    .grid {
+
+    .course-content h4 {
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .course-content p {
+      color: #666;
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #000;
+      margin-top: auto;
+    }
+
+  
+    .formula-section {
+      background: #f8f9fa;
+      padding: 80px 40px;
+    }
+
+    .mapel-section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .mapel-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .mapel-card {
+      background: #f4f4f4;
+      padding: 20px;
+      width: 250px;
+      border-radius: 8px;
+    }
+
+    .mapel-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .flip-card-front {
+      background-color: #f5f5f5;
+    }
+
+    .flip-card-back {
+      background-color: #8a8a8a;
+      color: rgb(0, 0, 0);
+      transform: rotateY(180deg);
+    }
+
+    .img-container {
+      width: 100%;
+      height: 150px;
+      overflow: hidden;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .img-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; 
+      display: block;
+      border-radius: 8px;
+    }
+
+    .formula-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+      gap: 40px;
+      margin-top: 50px;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .grid-item {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
+
+    .formula-item {
+      text-align: center;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    }
+
+    .formula-icon {
+      width: 80px;
+      height: 80px;
+      background: #fff3cd;
+      border-radius: 50%;
+      margin: 0 auto 20px;
+      display: flex;
+      align-items: center;
       justify-content: center;
+      font-size: 2rem;
+    }
+
+    .formula-label {
+      background: #ffd700;
+      color: #000;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+  
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 50px;
+    }
+
+    .testimonial-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .testimonial-avatar {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      background: #ddd;
+      overflow: hidden;
+    }
+
+    .testimonial-avatar img {
       width: 100%;
-      height:100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .contact {
+
+    /* Contact form */
+    .contact-form {
+      max-width: 600px;
+      margin: 0 auto;
+      background: #f8f9fa;
       padding: 40px;
-      font-size: 14px;
+      border-radius: 12px;
     }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+
+    .form-group textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
     footer {
-      font-size: 12px;
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
+      padding: 60px 0 30px;
+      margin-top: 80px;
     }
-.form-kontak {
-  padding: 40px 20px;
-  background-color: #f8f8f8;
-  max-width: 600px;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
 
-.form-kontak h2 {
-  text-align: center;
-  margin-bottom: 20px;
-}
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
 
-.form-kontak form {
-  display: flex;
-  flex-direction: column;
-}
+    .footer-section h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #fff;
+    }
 
-.form-kontak label {
-  margin-top: 10px;
-  font-weight: bold;
-}
+    .footer-section p,
+    .footer-section ul {
+      color: #ecf0f1;
+      line-height: 1.8;
+    }
 
-.form-kontak input,
-.form-kontak textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-}
+    .footer-section ul {
+      list-style: none;
+    }
 
-.form-kontak button {
-  margin-top: 20px;
-  padding: 10px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
+    .footer-section ul li {
+      margin-bottom: 10px;
+    }
 
-.form-kontak button:hover {
-  background-color: #0056b3;
-}
+    .footer-section ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .footer-section ul li a:hover {
+      color: #3498db;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+      color: #ecf0f1;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .social-links a:hover {
+      background: #3498db;
+      transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1);
+      margin-top: 40px;
+      padding-top: 20px;
+      text-align: center;
+      color: #bdc3c7;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 15px 20px;
+      }
+
+      .nav-links {
+        gap: 15px;
+      }
+
+      .hero-content h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero-content p {
+        font-size: 1.2rem;
+      }
+
+      .two-column {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .content-section {
+        padding: 60px 20px;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .social-links {
+        justify-content: center;
+      }
+    }
